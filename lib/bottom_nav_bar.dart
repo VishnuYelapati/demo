@@ -1,4 +1,4 @@
-import 'package:demo/gauge/SpeedoMeter.dart';
+import 'package:demo/gauge/Speedometer.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'home/home_page.dart';
