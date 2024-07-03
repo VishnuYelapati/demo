@@ -1,3 +1,4 @@
+import 'package:demo/gauge/SpeedoMeter.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'home/home_page.dart';
@@ -13,18 +14,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 0;
   List screens = const [
     HomePage(),
-    Scaffold(
-      backgroundColor: Colors.lightGreen,
-      body: Center(
-        child: Text(
-          "Profile Page",
-          style: TextStyle(
-            fontSize: 25,
-            color: Colors.white,
-          ),
-        ),
-      ),
-    ),
+    Speedometer(),
     Scaffold(
       backgroundColor: Colors.blueAccent,
       body: Center(
