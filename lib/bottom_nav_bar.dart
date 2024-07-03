@@ -13,10 +13,54 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 0;
   List screens = const [
     HomePage(),
-    Scaffold(),
-    Scaffold(),
-    Scaffold(),
-    Scaffold(),
+    Scaffold(
+      backgroundColor: Colors.lightGreen,
+      body: Center(
+        child: Text(
+          "Profile Page",
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    ),
+    Scaffold(
+      backgroundColor: Colors.blueAccent,
+      body: Center(
+        child: Text(
+          "My PC",
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    ),
+    Scaffold(
+      backgroundColor: Colors.redAccent,
+      body: Center(
+        child: Text(
+          "Recycle Bin",
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    ),
+    Scaffold(
+      backgroundColor: Colors.black26,
+      body: Center(
+        child: Text(
+          "Search",
+          style: TextStyle(
+            fontSize: 25,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    ),
   ];
 
   @override
