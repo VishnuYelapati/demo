@@ -1,3 +1,4 @@
+import 'package:demo/animation/cube.dart';
 import 'package:demo/gauge/Speedometer.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
@@ -16,14 +17,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
     HomePage(),
     Speedometer(),
     Scaffold(
-      backgroundColor: Colors.blueAccent,
       body: Center(
-        child: Text(
-          "My PC",
-          style: TextStyle(
-            fontSize: 25,
-            color: Colors.white,
-          ),
+        child: SingleChildScrollView(
+          child: Cube(),
         ),
       ),
     ),
